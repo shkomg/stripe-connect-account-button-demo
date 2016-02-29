@@ -1,0 +1,23 @@
+<template name="layoutMain">
+  {{> header}}
+  {{> yield}}
+</template>
+
+<template name="header">
+  <h3><a href="/">Home</a> | {{> loginButtons}} </h3>
+</template>
+
+<template name="signingIn">
+  Signing in . . .
+</template>
+
+<template name="mainPage">
+  Hi! You need to login to start.
+</template>
+
+<template name="dashboard">
+  <h3>Dashboard</h3>
+  <div class="row">
+    {{> stripe}}
+  </div>
+</template>

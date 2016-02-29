@@ -1,0 +1,10 @@
+{
+  "public": {
+    "stripe_pk":"pk_test_"
+  },
+  "private": {
+    "stripe_sk":"sk_test_",
+  },
+  "stripe_sk":"sk_test_",
+  "client_id":"ca_"
+}

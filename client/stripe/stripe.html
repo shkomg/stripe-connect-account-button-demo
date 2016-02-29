@@ -1,0 +1,19 @@
+
+<template name="stripe">
+  {{#if currentUser.services.stripe}}
+
+  {{#if currentUser.services.stripe.id}}
+  <a href="" class="btn btn-danger stripe-disconnect">Disconnect your Stripe account</a>
+  {{else}}
+  {{> stripeConnect}}
+  {{/if}}
+
+  {{else}}
+  <a href="" class="btn btn-primary stripe-connect">Connect your Stripe account</a>
+  {{/if}}
+</template>
+
+<template name="stripeConnect">
+  <i class="fa fa-spinner fa-spin"></i>
+</template>
+
